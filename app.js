@@ -2,11 +2,11 @@ const express = require('express')
 const app = express()
 const port = 3333
 const api = require('./api/axios/api');
-/*
+
 app.get('/', (req, res) => {
   res.send('AGORA VAI BROTHER!')
 })
-*/
+
 app.post('/testarapi', async (req, res) =>{
   const data = {
     amount: 200,
