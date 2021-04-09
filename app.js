@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3333
 const api = require('./api/axios/api');
 /*
 app.get('/', (req, res) => {
@@ -35,6 +35,6 @@ app.post('/testarapi', async (req, res) =>{
 
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
