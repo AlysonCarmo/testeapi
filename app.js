@@ -30,7 +30,7 @@ app.post('/testarapi', async (req, res) =>{
       })
       .catch((err) => {
         console.log(err) 
-        res.send('falhou: ' + res.data)
+        res.send('falhou: ' + err.response.data.errorCode)
       });
 
 })
