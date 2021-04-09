@@ -26,11 +26,11 @@ app.post('/testarapi', async (req, res) =>{
       .post('/test/ws/payment/doPayment', data)
       .then( (res) => {
         console.log(res) 
-        res.send('OK' + res)
+        res.send('OK: ' + res.data)
       })
       .catch((err) => {
         console.log(err) 
-        res.send('falhou' + res)
+        res.send('falhou: ' + res.data)
       });
 
 })
